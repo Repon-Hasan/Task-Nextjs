@@ -1,7 +1,7 @@
 # 🛍️ NextShop
 
 NextShop is a simple e-commerce web application built with **Next.js 15**, **NextAuth.js**, and **Tailwind CSS**.  
-It includes authentication, product browsing, product detail pages, and an admin manage page.  
+It includes authentication, product browsing, product detail pages.The app includes public pages such as a landing page and product details, while the product management page is protected and only accessible after login. Authenticated users can manage products by adding new ones, while guests can only browse available products.
 
 🔗 **Live Demo**: [NextShop on Vercel](https://my-shop-gilt-iota.vercel.app/)  
 💻 **Source Code**: [GitHub Repository](https://github.com/Repon-Hasan/Task-Nextjs)  
