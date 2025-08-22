@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Providers from './providers'
+import { ThemeProvider } from 'next-themes'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,8 +14,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <body className={inter.className}>
+           <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
         <Providers>
           <div className="min-h-screen flex flex-col">
             <Navbar />
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </Providers>
+        </ThemeProvider>
       </body>
     </html>
   )

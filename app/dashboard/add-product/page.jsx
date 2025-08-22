@@ -73,7 +73,7 @@ export default function AddProductPage() {
           placeholder="Product Name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+          className="w-full border border-black text-black p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
           required
         />
         <textarea
@@ -81,7 +81,7 @@ export default function AddProductPage() {
           placeholder="Product Description"
           value={formData.description}
           onChange={handleChange}
-          className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+          className="w-full border border-black text-black p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
           rows={4}
           required
         />
@@ -91,7 +91,7 @@ export default function AddProductPage() {
           placeholder="Product Price"
           value={formData.price}
           onChange={handleChange}
-          className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+          className="w-full border border-black text-black p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
           required
         />
         <input
@@ -100,7 +100,7 @@ export default function AddProductPage() {
           placeholder="Image URL"
           value={formData.image}
           onChange={handleChange}
-          className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+          className="w-full border border-black text-black p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
           required
         />
 

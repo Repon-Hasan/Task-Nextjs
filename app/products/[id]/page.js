@@ -4,7 +4,7 @@ import ProductMotion from "./ProductMotion";
 // Server Component to fetch product data
 async function fetchProduct(id) {
   try {
-    const res = await fetch(`/api/items/${id}`, { cache: "no-store" });
+    const res = await fetch(`https://my-shop-gilt-iota.vercel.app/api/items/${id}`, { cache: "no-store" });
     if (!res.ok) return null;
     const data = await res.json();
     return data.product;

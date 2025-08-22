@@ -73,7 +73,7 @@ export default function RegisterPage() {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full border px-3 py-2 text-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
               required
             />
           </div>
@@ -87,7 +87,7 @@ export default function RegisterPage() {
               placeholder="Enter your password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full border px-3 py-2 text-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
               required
             />
           </div>
