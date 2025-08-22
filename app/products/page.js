@@ -3,7 +3,7 @@ import ProductCard from "@/components/ProductCard";
 
 // Fetch products from your API
 async function fetchProducts() {
-  const res = await fetch("http://localhost:3000/api/items", {
+  const res = await fetch("https://my-shop-gilt-iota.vercel.app/api/items", {
     cache: "no-store", // prevent caching during development
   });
 

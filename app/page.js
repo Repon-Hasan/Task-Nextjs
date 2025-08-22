@@ -13,7 +13,7 @@ export default function HomePage() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const res = await fetch("/api/items");
+        const res = await fetch("https://my-shop-gilt-iota.vercel.app/api/items");
         if (!res.ok) throw new Error("Failed to fetch products");
         const data = await res.json();
         setProducts(data.products.slice(0, 3)); // Only top 3 highlights
