@@ -48,30 +48,34 @@ It includes authentication, product browsing, product detail pages.The app inclu
    ```bash
    git clone https://github.com/Repon-Hasan/Task-Nextjs.git
    cd Task-Nextjs
-Install dependencies
 
-bash
-npm install
-Set up environment variables
-Create a .env.local file in the root directory and configure values:
+- Install dependencies
+- bash
+- npm install
+- Set up environment variables
+- Create a .env.local file in the root directory and configure values:
 
-env
-NEXTAUTH_SECRET=your_secret_key
-NEXTAUTH_URL=http://localhost:3000
-Run the development server
+- env
+- NEXTAUTH_SECRET=your_secret_key
+- NEXTAUTH_URL=http://localhost:3000
+- Run the development server
 
-bash
-npm run dev
-Open http://localhost:3000 in your browser 🎉  
+- bash
+- npm run dev
+- Open http://localhost:3000 in your browser 🎉  
 
-🛣️ Route Summary
+## 🛣️ Route Summary
 
-- Route        	       Description
-- /	                   Home page
-- /login	               User login page
-- /products	           Product listing page
-- /products/[id]	        Single product details page
-- /api/auth/[...nextauth]	NextAuth authentication API
+| Route                     | Description                          |
+|---------------------------|--------------------------------------|
+| `/`                       | Home page                             |
+| `/login`                  | User login page                       |
+| `/register`               | User registration page                |
+| `/products`               | Product listing page                  |
+| `/products/[id]`          | Single product details page           |
+| `/dashboard/add-product`  | Protected product management page (requires login) |
+| `/api/auth/[...nextauth]` | NextAuth authentication API           |
+
 
 
 
@@ -87,4 +91,3 @@ Open http://localhost:3000 in your browser 🎉
 
 - Deployment: Vercel
    
-
